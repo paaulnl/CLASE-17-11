@@ -1,0 +1,22 @@
+class Candidate:
+    candidate = ""
+    political_party = ""
+    vote = 0
+
+    #metodos
+    def add_vote(self,vote):
+        self.vote +=1
+
+    ##constructor
+    def __init__(self,candidate,political_party,vote):
+        self.candidate = candidate
+        self.political_party = political_party
+        
+        
+candidate_1= input("Ingrese el nombre del primer candidato: ")
+candidate_2= input("Ingrese el nombre del segundo candidato: ")
+political_party1 = input("Ingrese el partido politico del primer candidato: ")
+political_party2 = input("Ingrese el partido politico del segundo candidato")
+print("El primer candidato es :",candidate_1,"Del partido politico:",political_party1,)
+print("El segundo candidato es :",candidate_2,"Del partido politico: ", political_party2,)
+vote = int(input"Ingrese por el candidato a votar: 1 o 2.")      
